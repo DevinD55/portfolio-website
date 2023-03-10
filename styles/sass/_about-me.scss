@@ -1,0 +1,17 @@
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.tech-stack-container{
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        i {
+            font-size: 4rem;
+        }
+    }
