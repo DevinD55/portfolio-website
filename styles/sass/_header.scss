@@ -1,15 +1,19 @@
-header {
-    height: 100vh;
-}
 
 
 .welcome-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 90vh;
 
     .photo-container {
         margin: 2%;
+        height: 400px;
+        width: 100%;
+        background-image: url(https://placebear.com/500/500);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
     .welcome-text {
@@ -24,6 +28,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 10vh;
 
     .logo {
         order: 0;
