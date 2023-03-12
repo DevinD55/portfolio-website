@@ -1,0 +1,54 @@
+html {
+    color: var(--base-black);
+    font-weight: lighter;
+}
+
+// HEADINGS and TITLES
+h1 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 5rem;
+    color: var(--accent-green);
+    margin: 0;
+    line-height: 4.5rem;
+    span{
+        color: var(--base-black);
+        font-size:1.5rem;
+        display: block;
+        line-height: 2rem;
+    }
+}
+
+h2 {
+    font-family:'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: var(--accent-green);
+    margin: 0;
+    padding: 0;
+}
+
+.subtitle {
+    font-family: 'Hind', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: lighter;
+    color: var(--base-black);
+}
+
+h4 {
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    color: var(--base-black);
+}
+
+// NAV Style
+
+.nav-container a {
+    color: var(--base-black);
+}
+
+header a:hover{
+    transition: .2s ease-in-out;
+    transform: scale(2);
+    color: var(--accent-green);
+}
+

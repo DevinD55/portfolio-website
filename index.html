@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Super cool site you love to visit</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- End of Google Fonts -->
 </head>
 <body>
     <header>
-        
         <nav class="wrapper">
             <ul class="nav-container">
                 <li>
@@ -22,6 +26,9 @@
                     <a href="#">Experience</a>
                 </li>
                 <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
                     <a href="#">Contact</a>
                 </li>
                 <img class="logo" src="https://placebear.com/75/75">
@@ -31,47 +38,59 @@
         <div class="welcome-container wrapper">
 
             <div class="welcome-text">
-                <h1>Welcome! I'm <span>Devin Dunn</span></h1>
-                <p class="title-text">Front-End Developer</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum dolorem ea aperiam illum atque corrupti saepe earum molestias blanditiis cupiditate.</p>
+                <h1><span>Welcome! I'm</span>Devin Dunn</h1>
+                <p class="subtitle">Front-End Developer</p>
+                <p>I love using front-end technologies to create responsive apps and webpages that bring brands to life! I’m excited to apply my mantra of <em>“solving complex problems through creative solutions” </em> to my future opportunities.</p>
             </div>
+                <div class="photo-container">
+                    <div class="background-shape">
+                        <!-- Empty, just for style -->
+                    </div>
+                    <!-- image is applied in CSS as background-image -->
+                </div>
 
-            <div class="photo-container">
-                <!-- <img src="https://placebear.com/300/300"> -->
-            </div>
+
         </div>
         
     </header>
 
     <main>
+
+        <!-- START OF ABOUT ME AND TECH STACK -->
         <section class="about-me" id="about-me">
             <div class="about-me-container wrapper">
                 <h2>About Me</h2>
                 <p class="subtitle">Web Developer & Experiential Expert</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure nam reiciendis porro unde quibusdam eaque pariatur? Rerum omnis, eum voluptas repellendus, molestias numquam libero tempore voluptate blanditiis nam molestiae ducimus iure, sapiente odit quidem voluptatibus et ad dolorum natus facilis laudantium quis iste expedita id. Molestiae quaerat fuga sit.</p>
+                <p class="about-me-body">Through a previous career in brand and event marketing, I’ve become a project leader and reinforced strategic thinking skills with the ability to pitch and develop new ideas into deliverable products. Now, as a Front-End Web Dev, I apply my knowledge of HTML, CSS, JavaScript, APIs and React to develop impactful connections between users and technology.</p>
             </div>
             <div>
                 <ul class="tech-stack-container">
                     <li>
                         <i class="fa-brands fa-square-js"></i>
+                        <h4>JavaScript</h4>
                     </li>
                     <li>
                         <i class="fa-brands fa-html5"></i>
+                        <h4>HTML5</h4>
                     </li>
                     <li>
                         <i class="fa-brands fa-react"></i>
+                        <h4>React</h4>
                     </li>
                     <li>
                         <i class="fa-brands fa-css3-alt"></i>
+                        <h4>CSS</h4>
                     </li>
                     <li>
                         <i class="fa-brands fa-sass"></i>
+                        <h4>SCSS</h4>
                     </li>
                 </ul>
             </div>
 
         </section>
 <!-- END OF ABOUT ME SECTION -->
+<!-- START OF PORTFOLIO -->
 
         <section class="portfolio wrapper" id="portfolio">
             <h2>My Work!</h2>
@@ -84,6 +103,8 @@
                         <div>
                             <h3>Project Title!</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque similique illum unde ea minus.</p>
+                            <button class="btn" href="#">Live Site</button>
+                            <button class="btn" href="#">Repo</button>
                         </div>
                     </li>
 
@@ -93,6 +114,8 @@
                         <div>
                             <h3>Project Title!</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque similique illum unde ea minus.</p>
+                            <button class="btn" href="#">Live Site</button>
+                            <button class="btn" href="#">Repo</button>
                         </div>
                     </li>
                     
@@ -102,6 +125,8 @@
                         <div>
                             <h3>Project Title!</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque similique illum unde ea minus.</p>
+                            <button class="btn" href="#">Live Site</button>
+                            <button class="btn" href="#">Repo</button>
                         </div>
                     </li>
                 </ul>

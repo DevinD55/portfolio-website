@@ -1,6 +1,62 @@
+html {
+  color: var(--base-black);
+  font-weight: lighter;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5rem;
+  color: var(--accent-green);
+  margin: 0;
+  line-height: 4.5rem;
+}
+h1 span {
+  color: var(--base-black);
+  font-size: 1.5rem;
+  display: block;
+  line-height: 2rem;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: var(--accent-green);
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle {
+  font-family: "Hind", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: lighter;
+  color: var(--base-black);
+}
+
+h4 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--base-black);
+}
+
+.nav-container a {
+  color: var(--base-black);
+}
+
+header a:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  color: var(--accent-green);
+}
+
 body {
-  background-color: var(--charcoal);
+  background-color: var(--mint-cream);
   font-size: 125%;
+  font-family: "Hind", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -13,47 +69,16 @@ li {
   list-style-type: none;
 }
 
-:root {
-  --coral-accent: #F37748;
-  --charcoal: #3E505B;
-  --light-blue: #788BFF;
-  --off-white: #EBEBEB;
-  --mint-accent: #C0E6DE;
+a {
+  text-decoration: none;
 }
 
-.welcome-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 90vh;
-}
-.welcome-container .photo-container {
-  margin: 2%;
-  height: 400px;
-  width: 100%;
-  background-image: url(https://placebear.com/500/500);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.welcome-container .welcome-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+:root {
+  --accent-green: #139A43;
+  --dark-green: #0B5D1e;
+  --base-black: #0E0F19;
+  --mint-cream: #F0F7EE;
+  --anti-white: #EBEBEB;
 }
 
 .nav-container {
@@ -70,17 +95,70 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
+  height: 5vh;
 }
 .nav-container .logo {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
 }
+.nav-container ul {
+  margin: 0;
+  padding: 0;
+}
 .nav-container li {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+.welcome-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95vh;
+}
+.welcome-container .photo-container {
+  margin: 3%;
+  height: 90%;
+  width: 40%;
+}
+.welcome-container .background-shape {
+  width: 100%;
+  background-image: url(https://placebear.com/500/500);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70%;
+  border-radius: 50%;
+  position: relative;
+  z-index: 0;
+  border: 70px solid var(--accent-green);
+}
+.welcome-container .welcome-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  width: 60%;
+}
+.welcome-container .welcome-text h1 {
+  padding-bottom: 3%;
 }
 
 .about-me-container {
@@ -109,8 +187,30 @@ li {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.tech-stack-container i {
+.tech-stack-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tech-stack-container li i {
   font-size: 4rem;
+}
+.tech-stack-container li:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  color: var(--accent-green);
+}
+.tech-stack-container li:hover h4 {
+  color: var(--accent-green);
 }
 
 .portfolio-container {

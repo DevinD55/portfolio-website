@@ -1,40 +1,61 @@
-
-
-.welcome-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 90vh;
-
-    .photo-container {
-        margin: 2%;
-        height: 400px;
-        width: 100%;
-        background-image: url(https://placebear.com/500/500);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .welcome-text {
-        display: flex;
-        flex-direction: column;
-        align-items: baseline;
-    }
-}
-
+// Nav Styles
 .nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
+    height: 5vh;
 
     .logo {
         order: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
     }
 
     li {
         order: 2;
     }
 }
+
+
+// Header Style
+.welcome-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 95vh;
+
+    .photo-container {
+        margin: 3%;
+        height: 90%;
+        width: 40%;
+    }
+
+    .background-shape {
+        width: 100%;
+        background-image: url(https://placebear.com/500/500);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 70%;
+        border-radius: 50%;
+        position: relative;
+        z-index: 0;
+        border: 70px solid var(--accent-green);
+    }
+
+    .welcome-text {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        flex-shrink: 2;
+        width: 60%;
+        h1{
+            padding-bottom: 3%;
+        }
+    }
+}
+

@@ -1,6 +1,9 @@
 body{
-    background-color: var(--charcoal);
+    background-color: var(--mint-cream);
     font-size: 125%;
+    font-family: 'Hind', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
@@ -11,4 +14,8 @@ body{
 
 li {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
