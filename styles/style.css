@@ -33,12 +33,28 @@ h2 {
   color: var(--base-black);
 }
 
+h3 {
+  font-family: "Hind", sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: lighter;
+  color: var(--base-black);
+}
+
 h4 {
-  text-align: center;
   font-family: "Montserrat", sans-serif;
   color: var(--base-black);
   margin: 0;
   padding: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.date {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .nav-container a {
@@ -71,6 +87,7 @@ body {
   font-family: "Hind", sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -189,6 +206,47 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.about-me-container .tech-stack-container {
+  padding: 0;
+  padding-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+}
+.about-me-container .tech-stack-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-me-container .tech-stack-container li i {
+  font-size: 3rem;
+}
+.about-me-container .tech-stack-container li:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  color: var(--accent-green);
+}
+.about-me-container .tech-stack-container li:hover h4 {
+  color: var(--accent-green);
+}
 
 .portfolio {
   text-align: center;
@@ -244,52 +302,19 @@ header {
 .portfolio .project-container .individual-project img {
   border-radius: 5%;
 }
-.portfolio .tech-stack-container {
-  padding: 0;
-  padding-bottom: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 70%;
-}
-.portfolio .tech-stack-container li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.portfolio .tech-stack-container li i {
-  font-size: 3rem;
-}
-.portfolio .tech-stack-container li:hover {
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  color: var(--accent-green);
-}
-.portfolio .tech-stack-container li:hover h4 {
-  color: var(--accent-green);
-}
 
 .experience {
-  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
-.experience .timeline-container {
+.experience .expereince-copy-container .timeline-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,6 +324,33 @@ header {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  z-index: 10;
+  background-color: var(--mint-cream);
+  width: 70%;
+}
+.experience .expereince-copy-container .timeline-container li {
+  margin: 2px;
+  padding: 10px;
+  min-width: 300px;
+  height: 150px;
+  width: 20%;
+  min-width: 250px;
+  background-color: var(--anti-white);
+}
+.experience .expereince-copy-container .timeline-container li .job-description {
+  font-size: 1rem;
+}
+.experience .experience-image {
+  width: 40%;
+  min-width: 500px;
+  height: 500px;
+  margin-left: 15px;
 }
 
 .blog {
@@ -312,13 +364,15 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0;
   padding: 0;
   text-align: left;
 }
 .blog .blog-container .blog-item {
   padding: 2%;
+  width: 40%;
+  text-align: center;
+  background-color: var(--anti-white);
 }
