@@ -1,0 +1,22 @@
+// Code to remove the expereince blocks and change them to the summary.
+
+@media (max-width: 1050px) {
+    .timeline-container {
+        li {
+            display: none;
+        }
+        
+    }
+
+    .experience-summary {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 600px) {
+    .experience-summary {
+        .job-description {
+            display: none;
+        }
+    }
+}

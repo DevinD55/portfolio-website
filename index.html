@@ -39,7 +39,7 @@
             <div class="welcome-text">
                 <h1><span>Welcome! I'm</span>Devin Dunn</h1>
                 <p class="subtitle">Front-End Developer</p>
-                <p>I love using front-end technologies to create responsive apps and webpages that bring brands to life! I’m excited to apply my mantra of <em>“solving complex problems through creative solutions” </em> to my future opportunities.</p>
+                <p class="welcome-body">I'm a multi-talented individual who has recently made a bold transition from marketing to front-end development. I leverag my deep understanding of consumer behavior and natural ability to connect people to bring brands to life! </p>
                 <button href="#" class="btn">Hire me!</button>
             </div>
             <div class="photo-container">
@@ -57,8 +57,15 @@
             <div class="about-me-container wrapper">
                 <h2>About Me</h2>
                 <p class="subtitle">Web Developer & Experiential Expert</p>
-                <p class="about-me-body">Through a previous career in brand and event marketing, I’ve become a project leader and reinforced strategic thinking skills with the ability to pitch and develop new ideas into deliverable products. Now, as a Front-End Web Dev, I apply my knowledge of HTML, CSS, JavaScript, APIs and React to develop impactful connections between users and technology.</p>
-                <h3>Tech Stack</h3>
+                <p class="about-me-body">
+                    <!-- About me copy here -->
+                    I'm a front-end developer with a passion for using my creative skills to drive business growth. My background in marketing has given me a unique perspective on design, and I enjoy finding innovative ways to engage with audiences.
+                    <span></span>
+                    In my free time, I love taking long walks with my dog and baking! I've picked up some mixology skills and love to try new drinks. If you're in need of carbs and a cocktail... I'm your guy.
+                    <span></span>
+                    I'm always looking to connect with new people and learn from others in the industry. Whether you're a fellow developer or a marketer looking to collaborate on a project, I'd love to hear from you. Don't hesitate to reach out and say hello!
+                </p>
+                <p class="subtitle">Super Unreal Skills in...</p>
                 <ul class="tech-stack-container">
                     <li>
                         <i class="fa-brands fa-square-js"></i>
@@ -90,7 +97,7 @@
         <section class="experience wrapper">
             <div class="expereince-copy-container">
                 <h2>My Experience</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dolores ad ab est labore voluptate asperiores! Incidunt itaque, reprehenderit deserunt perferendis ipsa obcaecati dolorum harum?</p>
+                <p> Through a previous career in brand and event marketing, I’ve become a project leader and reinforced strategic thinking skills with the ability to pitch and develop new ideas into deliverable products. Now, as a Front-End Web Dev, I apply my knowledge of HTML, CSS, JavaScript, APIs and React to develop impactful connections between users and technology.</p>
                 <ul class="timeline-container">
                     <li>
                         <h4>UoGuelph Co-op Placements</h4>
@@ -108,9 +115,26 @@
                         <p class="job-description">Managed brand strategy and creation of marketing materials for 4 specialty brands in addition to trade show responsibilities</p>
                     </li>
                 </ul>
+                <!-- Experience Summary is hidden, and displayed in mobile friendly format -->
+                <ul class="experience-summary">
+                    <li>                        <h4>UoGuelph Co-op Placements</h4>
+                    <p class="date">2015-2020</p>
+                    <p class="job-description">Developed core marketing skills through 16 months of paid internships (Symposium Cafe, UoGuelph, AGI)</p>
+                    </li>
+                    <li>
+                        <h4>Marketing Coordinator - AGI</h4>
+                        <p class="date">2020-2022</p>
+                        <p class="job-description">Lead for Commercial trade show planning while providing marketing support to senior team members</p>
+                    </li>
+                    <li>
+                        <h4>Marketing Specialist - AGI</h4>
+                        <p class="date">2022</p>
+                        <p class="job-description">Managed brand strategy and creation of marketing materials for 4 specialty brands in addition to trade show responsibilities</p>
+                    </li>
+                </ul>
             </div>
             <div class="experience-image">
-                <img src="https://placebear.com/1000/500">
+                <img src="assets/experience/agi-geaps-2022.JPG"alt="AGI Trade Show">
             </div>
         </section>
 
@@ -120,12 +144,28 @@
 
         <section class="portfolio wrapper" id="portfolio">
             <h2>My Work!</h2>
-            <p>View my coding projects below! Use the language buttons to filter projects by coding language.</p>
+            <p>View my coding projects below! Click on the project to learn more.</p>
             
             <div class="project-container">
-                <li class="individual-project"><img src="https://placebear.com/300/500" alt=""></li>
-                <li class="individual-project"><img src="https://placebear.com/400/400" alt=""></li>
-                <li class="individual-project"><img src="https://placebear.com/500/250" alt=""></li>
+                <div class="individual-project shoe-kloset">
+                    <div class="text-overlay">
+                        <h3>Multi-Page Website</h3>
+                        <p class="code-language">HTML, CSS, SCSS.</p>
+                        <p class="project-description">Provided with a flat design, I built a responsive website for a modern fashion blog with an emphasis on bright design.</p>
+                        <a class="btn" href="https://wondrous-horse-8a782c.netlify.app/">Live Site</a>
+                        <a class="btn" href="https://github.com/DevinD55/juno-project-one-devind55">Repo</a>
+                    </div>
+                </div>
+                    
+                <div class="individual-project gains-4-devs">
+                    <div class="text-overlay">
+                        <h3>FireBase Enabled JS App</h3>
+                        <p class="code-language">JavaScript, Firebase, HTML, CSS, SCSS</p>
+                        <p class="project-description">Collaborated with peer to develop a random workout generator. We created a JSON file of workouts, added it to FireBase, and leveraged JavaScript to make requests for workouts and display the return to our user is a stylized list.</p>
+                        <a class="btn" href="https://radiant-crostata-d26a6d.netlify.app/">Live Site</a>
+                        <a class="btn" href="https://github.com/DevinD55/project-2-gains-app">Repo</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -141,7 +181,7 @@
                         <div>
                             <h3>Blog Title!</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque similique illum unde ea minus.</p>
-                            <button class="btn" href="#">Read More</button>
+                            <a class="btn" href="#">Read More</a>
                         </div>
                     </li>
 
@@ -151,7 +191,7 @@
                         <div>
                             <h3>Blog Title!</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque similique illum unde ea minus.</p>
-                            <button class="btn" href="#">Live Site</button>
+                            <a class="btn" href="#">Live Site</a>
                         </div>
                     </li>
                         </div>

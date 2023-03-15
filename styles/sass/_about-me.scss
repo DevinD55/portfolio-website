@@ -4,6 +4,16 @@
     align-items: center;
     justify-content: center;
 
+    .about-me-body {
+        text-align: center;
+        width: 75%;
+
+        span{
+            display: block;
+            padding: 10px 0px;
+        }
+    }
+
     .tech-stack-container{
         padding: 0;
         padding-bottom: 5%;

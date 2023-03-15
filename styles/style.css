@@ -38,7 +38,7 @@ h3 {
   font-size: 1.5rem;
   margin: 0;
   font-weight: lighter;
-  color: var(--base-black);
+  color: var(--anti-white);
 }
 
 h4 {
@@ -54,6 +54,14 @@ h4 {
   margin: 0;
   padding: 0;
   font-weight: bold;
+  font-size: 1rem;
+}
+
+.code-language {
+  font-weight: bolder;
+}
+
+p {
   font-size: 1rem;
 }
 
@@ -164,13 +172,15 @@ header {
 }
 .welcome-container .photo-container {
   width: 35%;
-  background-image: url(https://placebear.com/500/500);
+  background-image: url(../assets/me/devin-gif.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 90%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-box-shadow: 25px -25px 0px var(--accent-green);
+          box-shadow: 25px -25px 0px var(--accent-green);
 }
 .welcome-container .welcome-text {
   display: -webkit-box;
@@ -190,6 +200,9 @@ header {
 .welcome-container .welcome-text h1 {
   padding-bottom: 3%;
 }
+.welcome-container .welcome-text .welcome-body {
+  font-size: 1.2rem;
+}
 
 .about-me-container {
   display: -webkit-box;
@@ -205,6 +218,14 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.about-me-container .about-me-body {
+  text-align: center;
+  width: 75%;
+}
+.about-me-container .about-me-body span {
+  display: block;
+  padding: 10px 0px;
 }
 .about-me-container .tech-stack-container {
   padding: 0;
@@ -260,26 +281,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-.portfolio .portfolio-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-.portfolio .portfolio-container .portfolio-item {
-  padding: 2%;
+  height: auto;
 }
 .portfolio .project-container {
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,18 +293,63 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .portfolio .project-container .individual-project {
   margin: 2%;
-}
-.portfolio .project-container .individual-project img {
   border-radius: 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  margin: 2%;
+  padding: 0;
+}
+.portfolio .project-container .individual-project .text-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.8);
+  color: var(--anti-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5%;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+.portfolio .project-container .individual-project .text-overlay .project-description {
+  width: 80%;
+}
+.portfolio .project-container .individual-project .text-overlay .btn {
+  margin: 2%;
+}
+.portfolio .project-container .individual-project :hover {
+  opacity: 1;
+}
+.portfolio .project-container .shoe-kloset {
+  background-image: url(../assets/portfolio/shoe-kloset-home.png);
+}
+.portfolio .project-container .gains-4-devs {
+  background-image: url(../assets/portfolio/gains-4-devs.png);
+  background-position: center;
 }
 
 .experience {
@@ -314,7 +363,13 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.experience .expereince-copy-container {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+}
 .experience .expereince-copy-container .timeline-container {
+  max-width: 750px;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,35 +377,42 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0;
   margin: 0;
   position: absolute;
   z-index: 10;
-  background-color: var(--mint-cream);
-  width: 70%;
 }
 .experience .expereince-copy-container .timeline-container li {
-  margin: 2px;
-  padding: 10px;
-  min-width: 300px;
-  height: 150px;
-  width: 20%;
-  min-width: 250px;
+  margin: 5px;
+  padding: 5px 25px;
+  width: 40%;
   background-color: var(--anti-white);
+  -webkit-box-shadow: 0 0 5px var(--base-black);
+          box-shadow: 0 0 5px var(--base-black);
 }
 .experience .expereince-copy-container .timeline-container li .job-description {
   font-size: 1rem;
 }
 .experience .experience-image {
   width: 40%;
-  min-width: 500px;
   height: 500px;
   margin-left: 15px;
+}
+.experience .experience-image img {
+  height: 100%;
+}
+
+.experience-summary {
+  display: none;
+  padding: 0;
+}
+.experience-summary li {
+  margin-top: 20px;
 }
 
 .blog {
@@ -374,5 +436,19 @@ header {
   padding: 2%;
   width: 40%;
   text-align: center;
-  background-color: var(--anti-white);
+  background-color: var(--accent-green);
+}
+
+@media (max-width: 1050px) {
+  .timeline-container li {
+    display: none;
+  }
+  .experience-summary {
+    display: inline-block;
+  }
+}
+@media (max-width: 600px) {
+  .experience-summary .job-description {
+    display: none;
+  }
 }

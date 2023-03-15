@@ -34,12 +34,13 @@ header {
 
     .photo-container {
         width: 35%;
-        background-image: url(https://placebear.com/500/500);
+        background-image: url(../assets/me/devin-gif.gif);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         height: 90%;
         align-self: flex-end;
+        box-shadow: 25px -25px 0px var(--accent-green);
     }
 
     .welcome-text {
@@ -50,6 +51,9 @@ header {
         width: 60%;
         h1{
             padding-bottom: 3%;
+        }
+        .welcome-body{
+            font-size:1.2rem;
         }
     }
 }
