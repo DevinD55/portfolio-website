@@ -12,16 +12,32 @@ header {
     height: 10vh;
     margin: 0;
     padding: 0;
+    text-align: center;
 
     .logo {
         order: 0;
+        height:75px;
+        width: 75px;
     }
 
     li {
         order: 2;
+        width: 90px;
     }
+
 }
 
+    .contact-icons {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            width: fit-content;
+            font-size: 1.5rem;
+        }
+    }
 
 // Header Style
 
@@ -54,6 +70,15 @@ header {
         }
         .welcome-body{
             font-size:1.2rem;
+        }
+
+        .button-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .btn{
+                width: 40%;
+            }
         }
     }
 }

@@ -20,18 +20,27 @@
                     <a href="#about-me">About</a>
                 </li>
                 <li>
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#experience">Experience</a>
                 </li>
                 <li>
-                    <a href="#">Experience</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
                     <a href="./blog.html">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <ul class="contact-icons">
+                        <li>
+                            <a target="_blank" href="https://github.com/DevinD55">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/devin-dunn55/"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>
                 </li>
-                <img class="logo" src="https://placebear.com/75/75">
+                <img class="logo" src="./assets/me/cbd-logo.png" alt="Coded by Devin logo, cool bear with shades!">
             </ul>
         </nav>
 
@@ -39,8 +48,12 @@
             <div class="welcome-text">
                 <h1><span>Welcome! I'm</span>Devin Dunn</h1>
                 <p class="subtitle">Front-End Developer</p>
-                <p class="welcome-body">I'm a multi-talented individual who has recently made a bold transition from marketing to front-end development. I leverag my deep understanding of consumer behavior and natural ability to connect people to bring brands to life! </p>
-                <button href="#" class="btn">Hire me!</button>
+                <p class="welcome-body">I'm a multi-talented individual who has recently made a bold transition from marketing to front-end development. I leverage my deep understanding of consumer behavior and natural ability to connect people to bring ideas and brands to life! </p>
+                <div class="button-container">
+                <a href="#" class="btn">Hire me!</a>
+                <a target="_none" href="./assets/experience/devin-dunn-resume-2023.pdf" class="btn">Download Resume</a>
+                </div>
+            
             </div>
             <div class="photo-container">
                 <!-- image is applied in CSS as background-image -->
@@ -60,10 +73,9 @@
                 <p class="about-me-body">
                     <!-- About me copy here -->
                     I'm a front-end developer with a passion for using my creative skills to drive business growth. My background in marketing has given me a unique perspective on design, and I enjoy finding innovative ways to engage with audiences.
-                    <span></span>
+                    <span>
                     In my free time, I love taking long walks with my dog and baking! I've picked up some mixology skills and love to try new drinks. If you're in need of carbs and a cocktail... I'm your guy.
-                    <span></span>
-                    I'm always looking to connect with new people and learn from others in the industry. Whether you're a fellow developer or a marketer looking to collaborate on a project, I'd love to hear from you. Don't hesitate to reach out and say hello!
+                    </span>
                 </p>
                 <p class="subtitle">Super Unreal Skills in...</p>
                 <ul class="tech-stack-container">
@@ -94,8 +106,8 @@
         </section>
 <!-- END OF ABOUT ME SECTION -->
 <!-- Experience Section -->
-        <section class="experience wrapper">
-            <div class="expereince-copy-container">
+        <section class="experience wrapper" id="experience">
+            <div class="expereince-copy-container ">
                 <h2>My Experience</h2>
                 <p> Through a previous career in brand and event marketing, I’ve become a project leader and reinforced strategic thinking skills with the ability to pitch and develop new ideas into deliverable products. Now, as a Front-End Web Dev, I apply my knowledge of HTML, CSS, JavaScript, APIs and React to develop impactful connections between users and technology.</p>
                 <ul class="timeline-container">
@@ -114,23 +126,7 @@
                         <p class="date">2022</p>
                         <p class="job-description">Managed brand strategy and creation of marketing materials for 4 specialty brands in addition to trade show responsibilities</p>
                     </li>
-                </ul>
-                <!-- Experience Summary is hidden, and displayed in mobile friendly format -->
-                <ul class="experience-summary">
-                    <li>                        <h4>UoGuelph Co-op Placements</h4>
-                    <p class="date">2015-2020</p>
-                    <p class="job-description">Developed core marketing skills through 16 months of paid internships (Symposium Cafe, UoGuelph, AGI)</p>
-                    </li>
-                    <li>
-                        <h4>Marketing Coordinator - AGI</h4>
-                        <p class="date">2020-2022</p>
-                        <p class="job-description">Lead for Commercial trade show planning while providing marketing support to senior team members</p>
-                    </li>
-                    <li>
-                        <h4>Marketing Specialist - AGI</h4>
-                        <p class="date">2022</p>
-                        <p class="job-description">Managed brand strategy and creation of marketing materials for 4 specialty brands in addition to trade show responsibilities</p>
-                    </li>
+
                 </ul>
             </div>
             <div class="experience-image">
@@ -168,8 +164,9 @@
                 </div>
             </div>
         </section>
+        <!-- END OF PORTFOLIO -->
 
-            <!-- BLOG STARTS HERE -->
+            <!-- BLOG STARTS HERE
             <section class="blog wrapper">
             <h2>Blog</h2>
             <p>Learn what I love to do while AFK!</p>
@@ -198,39 +195,47 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <!-- END OF PORTFOLIO -->
+        <!-- END OF BLOG -->
 
-        <section class="contact" id="contact">
-
-            <div class="contact-container wrapper">
-                <h2>Get in Touch!</h2>
-                <fieldset>
-                    <input type="text" id="contact-name" placeholder="Name" required>
-                    <label for="contact-name" class="sr-only">Name</label>
-
-                    <input type="email" id="contact-email" placeholder="Email" required>
-                    <label for="contact-email" class="sr-only">Email</label>
-                </fieldset>
-                <fieldset>
-                    <input type="text" id="contact-message" placeholder="Message"
-                    required>
-                    <label for="message" class="sr-only">Message</label>
-                </fieldset>
-            </div>
-        </section>
+        </main>
         <footer>
-            <div class="wrapper">
-                <p>codedbydevin@gmail.com</p>
-            <p>Skills from Juno College of Technology</p>
-            </div>
+            <div class="wrapper footer-container">
+                <div class="footer-copy">
+                    <h2>Get in Touch!</h2>
+                    <p>
+                        I'm always looking to connect with new people and learn from others in the industry. Whether you're a fellow developer or a marketer looking to collaborate on a project, I'd love to hear from you. Don't hesitate to reach out and say hello!
+                    </p>
+                </div>
+                    
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <fieldset class="name-email">
+                            <input type="text" id="contact-name" placeholder="Name" required>
+                            <label for="contact-name" class="sr-only">Name</label>
 
+                            <input type="email" id="contact-email" placeholder="Email" required>
+                            <label for="contact-email" class="sr-only">Email</label>
+                        </fieldset>
+                        <fieldset class="contact-message">
+                            <input type="text" id="contact-message" placeholder="Message"
+                            required>
+                            <label for="message" class="sr-only">Message</label>
+                        </fieldset>
+                        <button for="#contact-form" type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-floor">
+                    <p>Skills from Juno College of Technology</p>
+            </div>
         </footer>
 
     </main>
     
 </body>
-
 <script src="https://kit.fontawesome.com/8427b81c2f.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>

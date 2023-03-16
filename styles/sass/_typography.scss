@@ -80,7 +80,7 @@ p {
     color: var(--base-black);
 }
 
-header a:hover{
+header nav a:hover{
     transition: .2s ease-in-out;
     color: var(--accent-green);
 }
@@ -88,11 +88,15 @@ header a:hover{
 // Buttons
 
 .btn {
-    width: 30%;
     font-size: 1.3rem;
     color: var(--mint-cream);
     background-color: var(--accent-green);
     border-style: none;
+    box-shadow: 0 0 2px var(--base-black);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 0px 10px;
 }
 
 .btn:hover {
