@@ -61,6 +61,11 @@ footer {
 
     .footer-floor{
         text-align: center;
+        p {
+            margin: 0;
+            margin-top: 5%;
+            padding: 0;
+        }
     }
 
     input {
@@ -76,5 +81,9 @@ footer {
 
     h2 {
         color: var(--mint-cream)
+    }
+
+    .contact-button {
+        display: none;
     }
 }

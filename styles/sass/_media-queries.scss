@@ -8,31 +8,104 @@
         .job-description {
         display: none;
         }
-    
-    }
-
-        .experience-image {
+    experience-image {
             img {
                 width: 400px;
             }
+    }
 }
+
 
 @media (max-width: 600px) {
     
-    .wrapper {
-        max-width: 600px;
+
+    header {
+
+        .nav-container {
+            li{
+                display: none;
+            }
+            
+            .hamburger {
+                display: inline-block;
+            }
+
+            .logo{
+                display: inline-block;
+            }
+        }
+
+        .welcome-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+
+            .photo-container{
+                width: 300px;
+                max-height: 300px;
+                margin-top: 5%;
+                align-self: center;
+                box-shadow: 5px -5px 0px var(--accent-green);
+            }
+
+            h1 {
+                font-size: 3rem;
+                line-height: 3rem;
+                
+            }
+
+        }
+    }
+
+    .about-me-container {
+        text-align: center;
     }
 
     .experience-summary {
         .job-description {
             display: none;
         }
+
+        .timeline-container {
+            position: relative;
+            
+        }
     }
 
     .experience-image {
         display: none;
-        
     }
 
-    
+    .btn {
+        font-size: 1rem;
+    }
+
+    .portfolio .project-container .individual-project .text-overlay {
+        opacity: 1;
+
+        .project-description {
+            display: none;
+        }
+    }
+
+
+    footer {
+        .footer-container {
+
+        .contact-form-container {
+            display: none;
+        }
+
+        .footer-copy{
+            width: 100%;
+            .contact-button {
+                display: block;
+                width: 50%;
+            }
+        }
+        
+        
+        }
+    }
 }
