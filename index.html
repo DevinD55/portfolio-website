@@ -41,9 +41,39 @@
                     </ul>
                 </li>
                 <img class="logo" src="./assets/me/cbd-logo.png" alt="Coded by Devin logo, cool bear with shades!">
-                <a class="hamburger" href="#">
+                <a class="hamburger" href="#" id="hamburger">
                     <i class="fa-solid fa-bars"></i>
                 </a>
+                <!-- Hamburger Menu, hidden until mobile size -->
+                <div class="hamburger-menu-container">
+                    <!-- UL to show onClick. -->
+                    <ul class="hamburger-menu">
+                        <li>
+                            <a href="#about-me">About</a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <ul class="contact-icons">
+                                <li>
+                                    <a target="_blank" href="https://github.com/DevinD55">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.linkedin.com/in/devin-dunn55/"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </ul>
         </nav>
 
@@ -53,8 +83,8 @@
                 <p class="subtitle">Front-End Developer</p>
                 <p class="welcome-body">I'm a multi-talented individual who has recently made a bold transition from marketing to front-end development. I leverage my deep understanding of consumer behavior and natural ability to connect people to bring ideas and brands to life! </p>
                 <div class="button-container">
-                <button href="#" class="btn">Hire me!</button>
-                <button target="_none" href="./assets/experience/devin-dunn-resume-2023.pdf" class="btn">Download Resume</button>
+                <a href="mailto:codedbydevin@gmail.com" class="btn">Let's work!</a>
+                <a target="_none" href="./assets/experience/devin-dunn-resume-2023.pdf" class="btn">Download Resume</a>
                 </div>
             
             </div>
@@ -233,7 +263,7 @@
                 </div>
             </div>
             <div class="footer-floor">
-                    <p>Skills from Juno College of Technology</p>
+                    <p>Skills from <a target="_none"href="https://junocollege.com">@Juno College of Technology</a></p>
             </div>
         </footer>
 

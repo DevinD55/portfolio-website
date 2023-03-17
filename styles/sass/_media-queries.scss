@@ -18,8 +18,12 @@
 
 @media (max-width: 600px) {
     
+    .wrapper {
+        width: 90%;
+    }
 
     header {
+        height:fit-content;
 
         .nav-container {
             li{
@@ -39,11 +43,15 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 800px;
+            height: fit-content;
+
+            .welcome-text {
+                width: 100%;
+            }
 
             .photo-container{
                 width: 300px;
-                max-height: 300px;
+                min-height: 300px;
                 margin-top: 5%;
                 align-self: center;
                 box-shadow: 5px -5px 0px var(--accent-green);
@@ -60,6 +68,10 @@
 
     .about-me-container {
         text-align: center;
+
+        .about-me-body{
+            width: 100%;
+        }
     }
 
     .experience-summary {
@@ -104,8 +116,12 @@
                 width: 50%;
             }
         }
+    
         
-        
+        }
+
+        .footer-floor p{
+            font-size: 1rem;
         }
     }
 }

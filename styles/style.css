@@ -83,10 +83,17 @@ header nav a:hover {
   -webkit-box-shadow: 0 0 2px var(--base-black);
           box-shadow: 0 0 2px var(--base-black);
   border-radius: 5px;
+  font-weight: bolder;
+  padding: 5px 15px;
+  min-width: 100px;
+  margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  font-weight: bolder;
-  padding: 0px 10px;
-  font-weight: bolder;
 }
 
 .btn:hover {
@@ -170,6 +177,11 @@ header {
   display: none;
   font-size: 2rem;
   color: var(--accent-green);
+}
+.nav-container .hamburger-menu-container {
+  display: none;
+  position: absolute;
+  background-color: var(--accent-green);
 }
 
 .contact-icons {
@@ -618,6 +630,9 @@ footer .footer-floor p {
   margin-top: 5%;
   padding: 0;
 }
+footer .footer-floor p a {
+  color: var(--mint-cream);
+}
 footer input {
   border-style: none;
   border-bottom: 1px solid var(--dark-green);
@@ -646,6 +661,14 @@ footer .contact-button {
   }
 }
 @media (max-width: 600px) {
+  .wrapper {
+    width: 90%;
+  }
+  header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   header .nav-container li {
     display: none;
   }
@@ -666,11 +689,16 @@ footer .contact-button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 800px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  header .welcome-container .welcome-text {
+    width: 100%;
   }
   header .welcome-container .photo-container {
     width: 300px;
-    max-height: 300px;
+    min-height: 300px;
     margin-top: 5%;
     -ms-flex-item-align: center;
         align-self: center;
@@ -683,6 +711,9 @@ footer .contact-button {
   }
   .about-me-container {
     text-align: center;
+  }
+  .about-me-container .about-me-body {
+    width: 100%;
   }
   .experience-summary .job-description {
     display: none;
@@ -711,5 +742,8 @@ footer .contact-button {
   footer .footer-container .footer-copy .contact-button {
     display: block;
     width: 50%;
+  }
+  footer .footer-floor p {
+    font-size: 1rem;
   }
 }

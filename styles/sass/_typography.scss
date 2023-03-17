@@ -94,10 +94,14 @@ header nav a:hover{
     border-style: none;
     box-shadow: 0 0 2px var(--base-black);
     border-radius: 5px;
+    font-weight: bolder;
+    padding: 5px 15px;
+    min-width: 100px;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-weight: bolder;
-    padding: 0px 10px;
-    font-weight: bolder;
+
 }
 
 .btn:hover {
