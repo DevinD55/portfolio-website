@@ -14,68 +14,41 @@
 </head>
 <body>
     <header>
-        <nav class="wrapper">
-            <ul class="nav-container">
-                <li>
-                    <a href="#about-me">About</a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a href="./blog.html">Blog</a>
-                </li>
-                <li>
-                    <ul class="contact-icons">
-                        <li>
-                            <a target="_blank" href="https://github.com/DevinD55">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/devin-dunn55/"><i class="fa-brands fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </li>
-                <img class="logo" src="./assets/me/cbd-logo.png" alt="Coded by Devin logo, cool bear with shades!">
-                <a class="hamburger" href="#" id="hamburger">
-                    <i class="fa-solid fa-bars"></i>
-                </a>
-                <!-- Hamburger Menu, hidden until mobile size -->
-                <div class="hamburger-menu-container">
-                    <!-- UL to show onClick. -->
-                    <ul class="hamburger-menu">
-                        <li>
-                            <a href="#about-me">About</a>
-                        </li>
-                        <li>
-                            <a href="#experience">Experience</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="./blog.html">Blog</a>
-                        </li>
-                        <li>
-                            <ul class="contact-icons">
-                                <li>
-                                    <a target="_blank" href="https://github.com/DevinD55">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" href="https://www.linkedin.com/in/devin-dunn55/"><i class="fa-brands fa-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </ul>
-        </nav>
+        <div class="wrapper nav-bar">
+            <nav>
+                <ul class="nav-container">
+                    <li class="nav-item">
+                        <a href="#about-me">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="contact-icons">
+                            <li>
+                                <a target="_blank" href="https://github.com/DevinD55">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.linkedin.com/in/devin-dunn55/"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <img class="logo" src="./assets/me/cbd-logo.png" alt="Coded by Devin logo, cool bear with shades!">
+                    <a class="hamburger" href="#" id="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </a> 
+                    </div>
+                </ul>
+            </nav>
+        </div>
 
         <div class="welcome-container wrapper">
             <div class="welcome-text">
@@ -89,7 +62,7 @@
             
             </div>
             <div class="photo-container">
-                <!-- image is applied in CSS as background-image -->
+
             </div>
         </div>
         
@@ -97,14 +70,11 @@
     </header>
 
     <main>
-
-        <!-- START OF ABOUT ME AND TECH STACK -->
         <section class="about-me" id="about-me">
             <div class="about-me-container wrapper">
                 <h2>About Me</h2>
                 <p class="subtitle">Web Developer & Experiential Expert</p>
                 <p class="about-me-body">
-                    <!-- About me copy here -->
                     I'm a front-end developer with a passion for using my creative skills to drive business growth. My background in marketing has given me a unique perspective on design, and I enjoy finding innovative ways to engage with audiences.
                     <span>
                     In my free time, I love taking long walks with my dog and baking! I've picked up some mixology skills and love to try new drinks. If you're in need of carbs and a cocktail... I'm your guy.
@@ -139,7 +109,7 @@
         </section>
 <!-- END OF ABOUT ME SECTION -->
 <!-- Experience Section -->
-        <section class="experience wrapper" id="experience">
+        <section class="experience" id="experience">
             <div class="expereince-copy-container wrapper">
                 <h2>My Experience</h2>
                 <p> Through a previous career in brand and event marketing, I’ve become a project leader and reinforced strategic thinking skills with the ability to pitch and develop new ideas into deliverable products. Now, as a Front-End Web Dev, I apply my knowledge of HTML, CSS, JavaScript, APIs and React to develop impactful connections between users and technology.</p>
@@ -163,7 +133,7 @@
                 </ul>
             </div>
             <div class="experience-image">
-                <img src="assets/experience/agi-geaps-2022.JPG"alt="AGI Trade Show">
+                
             </div>
         </section>
 
