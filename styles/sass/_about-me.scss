@@ -22,6 +22,7 @@
         flex-wrap: wrap;
         justify-content: space-around;
         width: 70%;
+        max-width: 500px;
 
     
         li{
@@ -30,9 +31,16 @@
             align-items: center;
             margin: 2%;
             width: 75px;
+            height: 75px;
+            text-align: center;
                 i {
                     font-size: 3rem;
                 }
+                h4{
+                    line-height: 1.2rem;
+                    margin-top: 10px;
+                }
+
         }
         li:hover{
             transition: .2s ease-in-out;

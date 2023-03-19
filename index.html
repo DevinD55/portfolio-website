@@ -14,9 +14,9 @@
 </head>
 <body>
     <header>
-        <div class="wrapper nav-bar">
+        <div class="wrapper nav-container">
             <nav>
-                <ul class="nav-container">
+                <ul class="nav-bar">
                     <li class="nav-item">
                         <a href="#about-me">About</a>
                     </li>
@@ -41,13 +41,13 @@
                             </li>
                         </ul>
                     </li>
-                    <img class="logo" src="./assets/me/cbd-logo.png" alt="Coded by Devin logo, cool bear with shades!">
-                    <a class="hamburger" href="#" id="hamburger">
-                        <i class="fa-solid fa-bars"></i>
-                    </a> 
-                    </div>
+                    
                 </ul>
             </nav>
+            <img class="logo" src="./assets/me/cbd-logo.png" alt="Coded by Devin logo, cool bear with shades!">
+            <a class="hamburger" href="#" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+            </a> 
         </div>
 
         <div class="welcome-container wrapper">
@@ -102,13 +102,20 @@
                         <i class="fa-brands fa-sass"></i>
                         <h4>SCSS</h4>
                     </li>
+                    <li>
+                        <i class="fa-solid fa-database"></i>
+                        <h4>API</h4>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-code-branch"></i>
+                        <h4>Git Branching</h4>
+                    </li>
                 </ul>
             </div>
             
 
         </section>
-<!-- END OF ABOUT ME SECTION -->
-<!-- Experience Section -->
+
         <section class="experience" id="experience">
             <div class="expereince-copy-container wrapper">
                 <h2>My Experience</h2>
@@ -137,10 +144,6 @@
             </div>
         </section>
 
-<!-- End of experiences -->
-
-<!-- START OF PORTFOLIO -->
-
         <section class="portfolio wrapper" id="portfolio">
             <h2>My Work!</h2>
             <p>View my coding projects below! Click on the project to learn more.</p>
@@ -167,40 +170,6 @@
                 </div>
             </div>
         </section>
-        <!-- END OF PORTFOLIO -->
-
-            <!-- BLOG STARTS HERE
-            <section class="blog wrapper">
-            <h2>Blog</h2>
-            <p>Learn what I love to do while AFK!</p>
-            <div>
-                <ul class="blog-container">
-                    <li class="blog-item">
-                        <div class="blog-image"></div>
-                        <img src="https://placebear.com/200/200" alt="">
-                        <div>
-                            <h3>Blog Title!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque similique illum unde ea minus.</p>
-                            <a class="btn" href="#">Read More</a>
-                        </div>
-                    </li>
-
-                    <li class="blog-item">
-                        <div class="blog-image"></div>
-                        <img src="https://placebear.com/200/200" alt="">
-                        <div>
-                            <h3>Blog Title!</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque similique illum unde ea minus.</p>
-                            <a class="btn" href="#">Live Site</a>
-                        </div>
-                    </li>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section> -->
-
-        <!-- END OF BLOG -->
 
         </main>
         <footer>
@@ -210,25 +179,19 @@
                     <p>
                         I'm always looking to connect with new people and learn from others in the industry. Whether you're a fellow developer or a marketer looking to collaborate on a project, I'd love to hear from you. Don't hesitate to reach out and say hello!
                     </p>
-                    <button class="btn contact-button">Send Email!</button>
+                    <a href="mailto:codedbydevin@gmail.com" class="btn mobile-contact-button">Send me an email!</a>
                 </div>
                     
                 
                 <div class="contact-form-container">
-                    <form class="contact-form" id="contact-form">
-                        <fieldset class="name-email">
-                            <input type="text" id="contact-name" placeholder="Name" required>
-                            <label for="contact-name" class="sr-only">Name</label>
-
-                            <input type="email" id="contact-email" placeholder="Email" required>
-                            <label for="contact-email" class="sr-only">Email</label>
-                        </fieldset>
-                        <fieldset class="contact-message">
-                            <input type="text" id="contact-message" placeholder="Message"
-                            required>
-                            <label for="message" class="sr-only">Message</label>
-                        </fieldset>
-                        <button for="#contact-form" type="submit" class="btn">Send Message</button>
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mzbqabqq" method="POST">
+                        <label for="email" class="sr-only"> Your email: </label>
+                        <input type="email" placeholder="Email" name="email">
+                        
+                        <label for="message" class="sr-only"> Your message: </label>
+                            <textarea placeholder="Message"name="message"></textarea>
+                        
+                        <button class="btn" type="submit" for="contact-form">Send email</button>
                     </form>
                 </div>
             </div>

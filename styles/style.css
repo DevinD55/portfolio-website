@@ -106,7 +106,7 @@ html {
   overflow-x: hidden;
 }
 
-:focus {
+:focus-visible {
   border: 2px solid yellow;
 }
 
@@ -145,11 +145,39 @@ header {
   padding-bottom: 5%;
 }
 
-.nav-bar {
-  height: 10vh;
-}
-
 .nav-container {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-container .logo {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  height: 75px;
+  width: 75px;
+}
+.nav-container nav {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 30px;
+}
+.nav-container .nav-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,31 +195,10 @@ header {
   padding: 0;
   text-align: center;
 }
-.nav-container .logo {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-  height: 75px;
-  width: 75px;
-}
-.nav-container li {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+.nav-container .nav-bar li {
   width: 90px;
 }
-.nav-container .hamburger {
-  position: absolute;
-  right: 5%;
-  display: none;
-  font-size: 2rem;
-  color: var(--accent-green);
-}
-.nav-container .hamburger-menu-container {
-  display: none;
-}
-
-.contact-icons {
+.nav-container .contact-icons {
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,11 +214,18 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.contact-icons li {
+.nav-container .contact-icons li {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: 1.5rem;
+}
+.nav-container .hamburger {
+  position: absolute;
+  right: 5%;
+  display: none;
+  font-size: 2rem;
+  color: var(--accent-green);
 }
 
 .welcome-container {
@@ -313,6 +327,7 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 70%;
+  max-width: 500px;
 }
 .about-me-container .tech-stack-container li {
   display: -webkit-box;
@@ -327,9 +342,15 @@ header {
           align-items: center;
   margin: 2%;
   width: 75px;
+  height: 75px;
+  text-align: center;
 }
 .about-me-container .tech-stack-container li i {
   font-size: 3rem;
+}
+.about-me-container .tech-stack-container li h4 {
+  line-height: 1.2rem;
+  margin-top: 10px;
 }
 .about-me-container .tech-stack-container li:hover {
   -webkit-transition: 0.2s ease-in-out;
@@ -590,48 +611,46 @@ footer .footer-container .contact-form-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer .footer-container .contact-form-container .contact-form {
-  min-width: 300px;
-  width: 70%;
-}
-footer .footer-container .contact-form-container .contact-form .name-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-width: 300px;
-  margin: 15px 0px;
-  padding: 0;
+  width: 70%;
+}
+footer .footer-container .contact-form-container .contact-form input {
+  height: 3rem;
+  width: 95%;
+  color: var(--anti-white);
   border-style: none;
-  height: 40px;
+  margin: 2%;
+  font-size: 1.2rem;
 }
-footer .footer-container .contact-form-container .contact-form .name-email input {
-  height: 90%;
-  width: 40%;
-}
-footer .footer-container .contact-form-container .contact-form .contact-message {
-  width: 100%;
-  min-width: 300px;
-  margin: 15px 0px;
+footer .footer-container .contact-form-container .contact-form textarea {
+  width: 95%;
+  background-color: var(--accent-green);
   border-style: none;
-  height: 80px;
-  position: relative;
-  margin: 0;
-  padding: 0;
+  height: 7rem;
+  color: var(--anti-white);
+  margin: 2%;
+  font-size: 1rem;
 }
-footer .footer-container .contact-form-container .contact-form .contact-message input {
-  width: 100%;
-  height: 100%;
+footer .footer-container .contact-form-container .contact-form .btn {
   margin: 0;
-  padding: 0;
 }
 footer .footer-floor {
   text-align: center;
@@ -656,13 +675,13 @@ footer .btn {
 footer h2 {
   color: var(--mint-cream);
 }
-footer .contact-button {
+footer .mobile-contact-button {
   display: none;
 }
 
 @media (max-width: 1100px) {
-  .nav-bar {
-    height: 15vh;
+  .nav-container {
+    height: 10vh;
   }
   .welcome-container {
     height: 650px;
@@ -678,7 +697,7 @@ footer .contact-button {
   }
 }
 @media (max-width: 600px) {
-  .nav-bar {
+  .nav-container {
     height: 10vh;
   }
   .wrapper {
@@ -689,8 +708,26 @@ footer .contact-button {
     height: -moz-fit-content;
     height: fit-content;
   }
-  header .nav-container li {
+  header .nav-container .nav-bar {
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    background-color: var(--anti-white);
+    -webkit-box-shadow: 0 0 5px var(--base-black);
+            box-shadow: 0 0 5px var(--base-black);
   }
   header .nav-container .hamburger {
     display: inline-block;
@@ -774,7 +811,7 @@ footer .contact-button {
   footer .footer-container .footer-copy {
     width: 100%;
   }
-  footer .footer-container .footer-copy .contact-button {
+  footer .footer-container .footer-copy .mobile-contact-button {
     display: block;
     width: 50%;
   }

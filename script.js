@@ -1,9 +1,19 @@
 const hamburger = document.getElementById("hamburger");
 
-const hamburgerList = document.getElementById("hamburger-list");
+const navBar = document.getElementsByClassName("nav-bar")[0];
 
-const hamburgerContainer = document.getElementById('hamburger-menu-container');
+console.log(navBar)
+
+const openHamburger = () => {
+    if (navBar.style.display === "none") {
+        navBar.style.display = "flex";
+    } else {
+        navBar.style.display = "none";
+        
+    }
+}
 
 hamburger.addEventListener("click", function() {
-    
+    openHamburger();
 });
+
