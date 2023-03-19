@@ -111,11 +111,14 @@ html {
 }
 
 body {
-  background-color: var(--mint-cream);
   font-size: 125%;
   font-family: "Hind", sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url(../assets/style/background-image.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 .wrapper {
