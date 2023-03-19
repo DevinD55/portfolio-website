@@ -218,11 +218,11 @@ header {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .nav-container .hamburger {
   position: absolute;
-  right: 5%;
+  right: 10%;
   display: none;
   font-size: 2rem;
   color: var(--accent-green);
@@ -327,7 +327,7 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 70%;
-  max-width: 500px;
+  max-width: 450px;
 }
 .about-me-container .tech-stack-container li {
   display: -webkit-box;
@@ -692,11 +692,11 @@ footer .mobile-contact-button {
   .job-description {
     display: none;
   }
-  experience-image img {
+  .experience-image img {
     width: 400px;
   }
   .nav-container {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 600px) {
@@ -726,7 +726,7 @@ footer .mobile-contact-button {
     width: 150px;
     height: 200px;
     position: absolute;
-    top: 50px;
+    top: 70px;
     right: 5%;
     background-color: var(--anti-white);
     -webkit-box-shadow: 0 0 5px var(--base-black);
@@ -789,6 +789,13 @@ footer .mobile-contact-button {
   }
   .about-me-container .about-me-body {
     width: 100%;
+  }
+  .about-me-container .tech-stack-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  .about-me-container .tech-stack-container li i {
+    font-size: 2rem;
   }
   .experience-summary .job-description {
     display: none;

@@ -45,13 +45,13 @@ header {
         align-items: center;
         li{
             width: fit-content;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
     }
 
     .hamburger {
         position: absolute;
-        right: 5%;
+        right: 10%;
         display: none;
         font-size: 2rem;
         color: var(--accent-green)

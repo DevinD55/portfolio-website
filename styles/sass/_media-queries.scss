@@ -16,14 +16,14 @@
         .job-description {
         display: none;
         }
-    experience-image {
+    .experience-image {
             img {
                 width: 400px;
             }
     }
 
     .nav-container{
-        margin-top: 25px;
+        margin-top: 20px;
 
     }
 }
@@ -52,7 +52,7 @@
                 width: 150px;
                 height: 200px;
                 position: absolute;
-                top: 50px;
+                top: 70px;
                 right: 5%;
                 background-color: var(--anti-white);
                 box-shadow: 0 0 5px var(--base-black);
@@ -108,6 +108,18 @@
 
         .about-me-body{
             width: 100%;
+        }
+
+        .tech-stack-container{
+            width: 100%;
+            max-width: 400px;
+
+            li {
+                
+                i {
+                    font-size: 2rem;
+                }
+            }
         }
     }
 
