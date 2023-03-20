@@ -490,6 +490,9 @@ header {
 .experience .expereince-copy-container .timeline-container li .job-description {
   font-size: 1rem;
 }
+.experience .expereince-copy-container .timeline-container .resume-download {
+  display: none;
+}
 .experience .experience-image {
   width: 800px;
   height: 500px;
@@ -691,6 +694,9 @@ footer .mobile-contact-button {
   }
   .experience .expereince-copy-container .timeline-container {
     position: relative;
+  }
+  .experience .expereince-copy-container .timeline-container .resume-download {
+    display: inline-block;
   }
   .job-description {
     display: none;

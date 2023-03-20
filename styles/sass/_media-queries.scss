@@ -12,10 +12,16 @@
 
     .experience .expereince-copy-container .timeline-container {
         position: relative;
+
+        .resume-download {
+            display: inline-block;
+        }
     } 
         .job-description {
         display: none;
         }
+
+
     .experience-image {
             img {
                 width: 400px;
