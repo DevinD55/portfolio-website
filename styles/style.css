@@ -701,6 +701,9 @@ footer .mobile-contact-button {
   .nav-container {
     margin-top: 20px;
   }
+  .portfolio .project-container .individual-project .text-overlay {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
   .nav-container {
