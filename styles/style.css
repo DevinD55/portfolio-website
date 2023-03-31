@@ -449,6 +449,10 @@ header {
   background-image: url(../assets/portfolio/gains-4-devs.png);
   background-position: center;
 }
+.portfolio .project-container .instant-fantasy {
+  background-image: url(../assets/portfolio/instant-fantasy-image.png);
+  background-position: cover;
+}
 
 .experience {
   margin-top: 5%;
