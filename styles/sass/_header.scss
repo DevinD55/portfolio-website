@@ -2,6 +2,7 @@
 header {
     display: block;
     padding-bottom: 5%;
+
 }
 .nav-container {
     height: 10vh;
@@ -9,8 +10,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-
 
     .logo {
         order: 0;
@@ -74,7 +73,7 @@ header {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 80%;
+        height: 90%;
         align-self: flex-end;
         box-shadow: 25px -25px 0px var(--accent-green);
     }

@@ -29,19 +29,22 @@ footer {
                     input{
                         height: 3rem;
                         width: 95%;
-                        color: var(--anti-white);
+                        color: black;
+                        background-color: var(--anti-white);
                         border-style: none;
                         margin: 2%;
                         font-size: 1.2rem;
+                        border-radius: 0.2rem;
                     }
                     textarea {
                         width: 95%;
-                        background-color: var(--accent-green);
+                        background-color: var(--anti-white);
                         border-style: none;
                         height: 7rem;
-                        color: var(--anti-white);
+                        color: black;
                         margin: 2%;
                         font-size: 1rem;
+                        border-radius: 0.2rem;
                     }
 
                     .btn {

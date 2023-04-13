@@ -253,7 +253,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 80%;
+  height: 90%;
   -ms-flex-item-align: end;
       align-self: flex-end;
   -webkit-box-shadow: 25px -25px 0px var(--accent-green);
@@ -453,6 +453,10 @@ header {
   background-image: url(../assets/portfolio/instant-fantasy-image.png);
   background-position: cover;
 }
+.portfolio .project-container .sunrun {
+  background-image: url(../assets/portfolio/sunrun.png);
+  background-position: center;
+}
 
 .experience {
   margin-top: 5%;
@@ -645,19 +649,22 @@ footer .footer-container .contact-form-container .contact-form {
 footer .footer-container .contact-form-container .contact-form input {
   height: 3rem;
   width: 95%;
-  color: var(--anti-white);
+  color: black;
+  background-color: var(--anti-white);
   border-style: none;
   margin: 2%;
   font-size: 1.2rem;
+  border-radius: 0.2rem;
 }
 footer .footer-container .contact-form-container .contact-form textarea {
   width: 95%;
-  background-color: var(--accent-green);
+  background-color: var(--anti-white);
   border-style: none;
   height: 7rem;
-  color: var(--anti-white);
+  color: black;
   margin: 2%;
   font-size: 1rem;
+  border-radius: 0.2rem;
 }
 footer .footer-container .contact-form-container .contact-form .btn {
   margin: 0;
@@ -827,9 +834,6 @@ footer .mobile-contact-button {
   }
   .portfolio .project-container .individual-project .text-overlay {
     opacity: 1;
-  }
-  .portfolio .project-container .individual-project .text-overlay .project-description {
-    display: none;
   }
   footer .footer-container .contact-form-container {
     display: none;
