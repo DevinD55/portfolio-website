@@ -7,7 +7,6 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 5rem;
   color: var(--accent-green);
-  margin: 0;
   line-height: 4.5rem;
 }
 h1 span {
@@ -21,14 +20,11 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   color: var(--accent-green);
-  margin: 0;
-  padding: 0;
 }
 
 .subtitle {
   font-family: "Hind", sans-serif;
   font-size: 1.5rem;
-  margin: 0;
   font-weight: lighter;
   color: var(--base-black);
 }
@@ -36,7 +32,6 @@ h2 {
 h3 {
   font-family: "Hind", sans-serif;
   font-size: 1.5rem;
-  margin: 0;
   font-weight: lighter;
   color: var(--anti-white);
 }
@@ -44,15 +39,11 @@ h3 {
 h4 {
   font-family: "Montserrat", sans-serif;
   color: var(--base-black);
-  margin: 0;
-  padding: 0;
   font-size: 1rem;
   line-height: 1rem;
 }
 
 .date {
-  margin: 0;
-  padding: 0;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -104,6 +95,12 @@ header nav a:hover {
 
 html {
   overflow-x: hidden;
+  min-width: 320px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
 :focus-visible {
@@ -113,8 +110,6 @@ html {
 body {
   font-size: 125%;
   font-family: "Hind", sans-serif;
-  margin: 0;
-  padding: 0;
   background-image: url(../assets/style/background-image.png);
   background-position: top;
   background-size: contain;
@@ -289,7 +284,7 @@ header {
       justify-content: space-around;
 }
 .welcome-container .welcome-text .button-container .btn {
-  width: 40%;
+  width: 100%;
 }
 
 .about-me-container {
@@ -316,7 +311,6 @@ header {
   padding: 10px 0px;
 }
 .about-me-container .tech-stack-container {
-  padding: 0;
   padding-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,7 +323,7 @@ header {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 70%;
+  width: 80%;
   max-width: 450px;
 }
 .about-me-container .tech-stack-container li {
@@ -395,8 +389,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
-  padding: 0;
   width: 100%;
 }
 .portfolio .project-container .individual-project {
@@ -407,7 +399,7 @@ header {
   width: 400px;
   height: 400px;
   margin: 2%;
-  padding: 0;
+  border: 0.2rem solid black;
 }
 .portfolio .project-container .individual-project .text-overlay {
   width: 100%;
@@ -424,17 +416,19 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 5%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 4%;
   opacity: 0;
-  padding: 0;
-  margin: 0;
+}
+.portfolio .project-container .individual-project .text-overlay .link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .portfolio .project-container .individual-project .text-overlay .project-description {
   width: 80%;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .portfolio .project-container .individual-project .text-overlay .btn {
   margin: 2%;
@@ -484,8 +478,6 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0;
-  margin: 0;
 }
 .experience .expereince-copy-container .timeline-container li {
   margin: 5px;
@@ -524,8 +516,6 @@ header {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0;
-  padding: 0;
   text-align: left;
 }
 .blog .blog-container .blog-item {
@@ -564,7 +554,6 @@ header {
   width: 100%;
   min-width: 300px;
   margin: 15px 0px;
-  padding: 0;
   border-style: none;
   height: 40px;
 }
@@ -579,14 +568,10 @@ header {
   border-style: none;
   height: 80px;
   position: relative;
-  margin: 0;
-  padding: 0;
 }
 .contact .contact-form-container .contact-form .contact-message input {
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 .contact input {
   border-style: none;
@@ -673,9 +658,7 @@ footer .footer-floor {
   text-align: center;
 }
 footer .footer-floor p {
-  margin: 0;
   margin-top: 5%;
-  padding: 0;
 }
 footer .footer-floor p a {
   color: var(--mint-cream);
@@ -688,6 +671,8 @@ footer input {
 footer .btn {
   margin-top: 20px;
   min-width: 70px;
+  background-color: var(--dark-green);
+  cursor: pointer;
 }
 footer h2 {
   color: var(--mint-cream);

@@ -9,7 +9,6 @@ h1 {
     font-family:'Montserrat', sans-serif;
     font-size: 5rem;
     color: var(--accent-green);
-    margin: 0;
     line-height: 4.5rem;
 
     span{
@@ -25,15 +24,13 @@ h2 {
     font-family:'Montserrat', sans-serif;
     font-size: 2.5rem;
     color: var(--accent-green);
-    margin: 0;
-    padding: 0;
+
 }
 
 // subtitle text is added under h1 and h2 to add 2-3 word description to the section
 .subtitle {
     font-family: 'Hind', sans-serif;
     font-size: 1.5rem;
-    margin: 0;
     font-weight: lighter;
     color: var(--base-black);
 }
@@ -42,7 +39,6 @@ h2 {
 h3 {
     font-family: 'Hind', sans-serif;
     font-size: 1.5rem;
-    margin: 0;
     font-weight: lighter;
     color: var(--anti-white);
 }
@@ -51,15 +47,11 @@ h3 {
 h4 {
     font-family:'Montserrat', sans-serif;
     color: var(--base-black);
-    margin: 0;
-    padding: 0;
     font-size: 1rem;
     line-height: 1rem;
 }
 
 .date {
-    margin: 0;
-    padding: 0;
     font-weight: bold;
     font-size: 1rem;
 }
