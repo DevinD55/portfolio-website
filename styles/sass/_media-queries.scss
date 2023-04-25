@@ -49,6 +49,10 @@
         width: 90%;
     }
 
+    p{
+        font-size:smaller;
+    }
+
     header {
         height:fit-content;
 
@@ -82,9 +86,14 @@
             justify-content: center;
             align-items: center;
             height: fit-content;
+            margin-top: 1rem;
 
             .welcome-text {
                 width: 100%;
+                .welcome-body{
+                    font-size: smaller;
+
+                }
             }
 
             .photo-container{
@@ -98,16 +107,6 @@
             h1 {
                 font-size: 3rem;
                 line-height: 3rem;
-                
-            }
-
-            .button-container {
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                .btn{
-                    min-width: 80%;
-                }
             }
 
         }
@@ -133,16 +132,24 @@
         }
     }
 
-    .experience-summary {
-        .job-description {
-            display: none;
+    .experience{
+        .expereince-copy-container{
+            margin-left: 5%;
+            .experience-summary{
+                margin: 1rem 0;
+            }
         }
 
-        .timeline-container {
-            position: relative;
-            
+        .experience-summary {
+            .job-description {
+                display: none;
+            }
+
+            .timeline-container {
+                position: relative;
+                
+            }
         }
-    }
 
     .experience-image {
         display: none;
@@ -151,6 +158,9 @@
     .btn {
         font-size: 1rem;
     }
+    }
+
+    
 
     .portfolio .project-container .individual-project .text-overlay {
         opacity: 1;
