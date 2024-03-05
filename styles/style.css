@@ -437,6 +437,11 @@ header {
 .portfolio .project-container .individual-project :hover {
   opacity: 1;
 }
+
+.portfolio .project-container .vinyl-vault{
+  background-image: url(../assets/portfolio/vinyl-vault-image.png);
+}
+
 .portfolio .project-container .shoe-kloset {
   background-image: url(../assets/portfolio/shoe-kloset-home.png);
 }
